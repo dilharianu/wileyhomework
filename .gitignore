@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/WileyHomeWork.VersionIncrementer/.vs/WileyHomeWork.VersionIncrementer
+/WileyHomeWork.VersionIncrementer/WileyHomeWork.VersionIncrementer/bin/Debug/net6.0
+/WileyHomeWork.VersionIncrementer/WileyHomeWork.VersionIncrementer/obj
+/WileyHomeWork.VersionIncrementer/WileyHomeWork.VersionIncrementer.Tests/bin/Debug/net6.0
+/WileyHomeWork.VersionIncrementer/WileyHomeWork.VersionIncrementer.Tests/obj
