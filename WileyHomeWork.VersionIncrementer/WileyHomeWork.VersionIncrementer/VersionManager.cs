@@ -11,7 +11,7 @@
             _versionStore = versionStore;
         }
 
-        public void IncrementVersion()
+        public string IncrementVersionAndSave()
         {
             var version = ParseAndGetCurruntVersion();
             Console.WriteLine($"Updating the currunt version number: {version}");
@@ -19,6 +19,8 @@
 
             _versionStore.WriteVersion(version.ToString());
             Console.WriteLine($"Updated the currunt version number to: {version}");
+
+            return version.ToString();
         }
 
         private Version ParseAndGetCurruntVersion()
@@ -28,7 +30,7 @@
             string[] versionArray = versionString.Split('.');
             if (versionArray.Length == 0 || versionArray.Length != 4)
             {
-                throw new ArgumentException("wrong product version.");
+                throw new ArgumentException("The product version is not in the correct format.");
             }
 
             int first, second, major, minor;
@@ -41,7 +43,7 @@
             }
             else
             {
-                throw new ArgumentException("Issue in parsing the version.");
+                throw new ArgumentException("The product version is not in the correct format.");
             }
         }
     }

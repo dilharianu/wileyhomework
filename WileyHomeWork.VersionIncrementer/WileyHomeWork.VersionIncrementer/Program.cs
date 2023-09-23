@@ -27,15 +27,20 @@ try
         default: throw new ArgumentException("Error!");
     }
 
-    versionManager.IncrementVersion();
+    versionManager.IncrementVersionAndSave();
 
     Console.WriteLine("Done!");    
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine($"Error Occured! {ex.Message}");
+    DisplayHelp();
+    Environment.Exit(1);
 }
 catch (Exception ex)
 {
     Console.WriteLine("Error Occured!");
     Console.WriteLine(ex.Message);
-    DisplayHelp();
     Environment.Exit(1);
 }
 
@@ -51,19 +56,19 @@ static void ValidateInputs(string[] arguments)
 {
     if (arguments.Length != 3)
     {
-        throw new Exception("Missing arguments!");
+        throw new ArgumentException("Provided number of arguments are not correct.");
     }
 
     string pathToProductFile = arguments[1];
     if (!IsValidVersionFile(pathToProductFile))
     {
-        throw new Exception($"{pathToProductFile}. File does not exisit!");
+        throw new ArgumentException($"The specified version file - {pathToProductFile}, does not exisit.");
     }
 
     string releaseType = arguments[2].Trim().ToLower();
     if (!(!string.Equals(releaseType, "release") || !string.Equals(releaseType, "bugfix")))
     {
-        throw new Exception($"wrong release type");
+        throw new ArgumentException($"Value provided for the release type is not correct.");
     }
 }
 
