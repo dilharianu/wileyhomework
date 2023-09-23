@@ -27,7 +27,7 @@ try
         default: throw new ArgumentException("Error!");
     }
 
-    versionManager.IncrementReleaseVersion();
+    versionManager.IncrementVersion();
 
     Console.WriteLine("Done!");    
 }

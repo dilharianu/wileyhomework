@@ -1,12 +1,12 @@
 ﻿namespace WileyHomeWork.VersionIncrementer
 {
-    internal class Version
+    public class Version
 
     {
-        internal int FirstVersionNo { get; set; }
-        internal int SecondVersionNo { get; set; }
-        internal int ThirdVersionNo { get; set; }
-        internal int FourthVersionNo { get; set; }
+        public int FirstVersionNo { get; set; }
+        public int SecondVersionNo { get; set; }
+        public int ThirdVersionNo { get; set; }
+        public int FourthVersionNo { get; set; }
 
         public Version(int first, int second, int third, int fouth)
         {

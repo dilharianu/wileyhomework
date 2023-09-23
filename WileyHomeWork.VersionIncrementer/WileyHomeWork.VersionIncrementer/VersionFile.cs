@@ -1,6 +1,6 @@
 ﻿namespace WileyHomeWork.VersionIncrementer
 {
-    internal class VersionFile : IVersionStore
+    public class VersionFile : IVersionStore
     {
         private readonly string _productInfoFilePath;
 

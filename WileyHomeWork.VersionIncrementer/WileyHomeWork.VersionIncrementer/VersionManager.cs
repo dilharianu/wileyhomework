@@ -1,6 +1,6 @@
 ﻿namespace WileyHomeWork.VersionIncrementer
 {
-    internal class VersionManager
+    public class VersionManager
     {
         private readonly IVersionIncrementer _versionIncrementer;
         private readonly IVersionStore _versionStore;
@@ -11,14 +11,14 @@
             _versionStore = versionStore;
         }
 
-        public void IncrementReleaseVersion()
+        public void IncrementVersion()
         {
             var version = ParseAndGetCurruntVersion();
-            Console.WriteLine($"Updating the currunt version number: {version.ToString()}");
+            Console.WriteLine($"Updating the currunt version number: {version}");
             _versionIncrementer.Increment(version);
 
             _versionStore.WriteVersion(version.ToString());
-            Console.WriteLine($"Updated the currunt version number to: {version.ToString()}");
+            Console.WriteLine($"Updated the currunt version number to: {version}");
         }
 
         private Version ParseAndGetCurruntVersion()

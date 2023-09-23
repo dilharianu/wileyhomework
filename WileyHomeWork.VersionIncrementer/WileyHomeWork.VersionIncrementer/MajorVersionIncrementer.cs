@@ -1,6 +1,6 @@
 ﻿namespace WileyHomeWork.VersionIncrementer
 {
-    internal class MajorVersionIncrementer : IVersionIncrementer
+    public class MajorVersionIncrementer : IVersionIncrementer
     {
         public void Increment(Version version)
         {

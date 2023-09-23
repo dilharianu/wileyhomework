@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WileyHomeWork.VersionIncrementer", "WileyHomeWork.VersionIncrementer\WileyHomeWork.VersionIncrementer.csproj", "{20B76604-B645-42A4-8E49-06AE475BDFCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WileyHomeWork.VersionIncrementer", "WileyHomeWork.VersionIncrementer\WileyHomeWork.VersionIncrementer.csproj", "{20B76604-B645-42A4-8E49-06AE475BDFCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WileyHomeWork.VersionIncrementer.Tests", "WileyHomeWork.VersionIncrementer.Tests\WileyHomeWork.VersionIncrementer.Tests.csproj", "{404947EF-5201-46DC-A784-5A73FBF9C42E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{20B76604-B645-42A4-8E49-06AE475BDFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B76604-B645-42A4-8E49-06AE475BDFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B76604-B645-42A4-8E49-06AE475BDFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{404947EF-5201-46DC-A784-5A73FBF9C42E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404947EF-5201-46DC-A784-5A73FBF9C42E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404947EF-5201-46DC-A784-5A73FBF9C42E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404947EF-5201-46DC-A784-5A73FBF9C42E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

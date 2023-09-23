@@ -1,8 +1,8 @@
 ﻿namespace WileyHomeWork.VersionIncrementer
 {
-    internal interface IVersionStore
+    public interface IVersionStore
     {
-        internal string ReadVersion();
-        internal void WriteVersion(string version);
+        public string ReadVersion();
+        public void WriteVersion(string version);
     }
 }
