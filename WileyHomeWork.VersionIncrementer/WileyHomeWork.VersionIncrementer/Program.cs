@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using WileyHomeWork.VersionIncrementer;
 
-Console.WriteLine("---Version Incrementer---");
+Console.Title = ("---Version Incrementer---");
 
 try
 {
@@ -46,10 +46,13 @@ catch (Exception ex)
 
 static void DisplayHelp()
 {
-    Console.WriteLine($"Version Incrementer! accepts two arguments in the following order.");
-    Console.WriteLine($"Arument One: full path to the file");
-    Console.WriteLine($"Arument Two: type of the release [Feature | BugFix]");
-    Console.WriteLine($"Example: ");
+    Console.WriteLine($"--- Help ----");
+    Console.WriteLine($"VersionIncrementer accepts two arguments in the following order.");
+    Console.WriteLine($"Argument One: full path to the file");
+    Console.WriteLine($"Argument Two: type of the release [Feature | BugFix]");
+    Console.WriteLine($"Examples : ");
+    Console.WriteLine($"\tVersionIncrementer ProductInfo.cs Feature");
+    Console.WriteLine($"\tVersionIncrementer ProductInfo.cs BugFix");
 }
 
 static void ValidateInputs(string[] arguments)
