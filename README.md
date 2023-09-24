@@ -9,6 +9,11 @@ Please write a console application which takes an argument of the type of releas
 
 Instructions: Solution should show good coding practices, be written in C# and include unit tests.
 
-# Inputs for the consolea application
+# Inputs for the console application
 commandline argument 1: full path to the file - validation -- if it is a correct path / if the file exisits
 commandline argument 2: type of the release - validation -- accepted values [ feature, bug fix] 
+
+Examples:
+
+VersionIncrementer ProductInfo.cs Feature
+VersionIncrementer ProductInfo.cs BugFix
