@@ -11,7 +11,7 @@
             _versionStore = versionStore;
         }
 
-        public string IncrementVersionAndSave()
+        public void IncrementVersionAndSave()
         {
             var version = ParseAndGetCurruntVersion();
             Console.WriteLine($"Updating the currunt version number: {version}");
@@ -19,8 +19,6 @@
 
             _versionStore.WriteVersion(version.ToString());
             Console.WriteLine($"Updated the currunt version number to: {version}");
-
-            return version.ToString();
         }
 
         private Version ParseAndGetCurruntVersion()
